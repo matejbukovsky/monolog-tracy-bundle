@@ -30,8 +30,15 @@ class Configuration implements \Symfony\Component\Config\Definition\Configuratio
 
 	public function getConfigTreeBuilder()
 	{
-		$treeBuilder = new TreeBuilder();
-		$rootNode = $treeBuilder->root(static::ROOT_NAME);
+		$treeBuilder = new TreeBuilder(static::ROOT_NAME);
+
+		if (\method_exists($treeBuilder, 'getRootNode')) {
+			$rootNode = $treeBuilder->getRootNode();
+		} else {
+			// BC layer for symfony/config 4.1 and older
+			$rootNode = $treeBuilder->root(static::ROOT_NAME);
+		}
+
 		$rootNode->addDefaultsIfNotSet();
 
 		$this->addLogDirectory($rootNode);
