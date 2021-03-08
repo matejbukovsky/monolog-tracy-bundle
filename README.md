@@ -1,5 +1,11 @@
 # [Tracy](https://tracy.nette.org) BlueScreen handler for [Symfony](https://symfony.com/) ([Monolog](https://github.com/Seldaek/monolog))
 
+This package is not maintained anymore, you can use [mangoweb/monolog-tracy-handler](https://github.com/mangoweb-backend/monolog-tracy-handler) instead.
+
+
+------------
+
+
 [![Build Status](https://img.shields.io/travis/nella/monolog-tracy-bundle/master.svg?style=flat-square)](https://travis-ci.org/nella/monolog-tracy-bundle)
 [![Windows Build Status](https://img.shields.io/appveyor/ci/Vrtak-CZ/monolog-tracy-bundle/master.svg?style=flat-square)](https://ci.appveyor.com/project/Vrtak-CZ/monolog-tracy-bundle)
 [![Code Coverage](https://img.shields.io/coveralls/nella/monolog-tracy-bundle.svg?style=flat-square)](https://coveralls.io/r/nella/monolog-tracy-bundle)
