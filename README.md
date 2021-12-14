@@ -35,7 +35,7 @@ fully compatible with this library.
 Using  [Composer](http://getcomposer.org/):
 
 ```sh
-$ composer require nella/monolog-tracy-bundle
+$ composer require matejbukovsky/monolog-tracy-bundle
 ```
 
 ### Register Bundle
